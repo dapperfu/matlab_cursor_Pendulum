@@ -12,7 +12,7 @@ Product contract: [PLAN.md](../PLAN.md). This file is the Cursor execution plan.
 - [x] m4-generator: seeded streams, witness-first generation, fallbacks, canonical hash, seed 1 levels 1-5.
 - [x] m5-uifigure: Space-only uifigure client, cached art, optional tones, render-independent physics.
 - [x] m6-stages: Stage II-III templates and tick-phased moving bodies through level 20 plus fallbacks.
-- [ ] m7-ml: observations, rewards, replay, headless rollout, witness baseline, bounded RL Toolbox demo.
+- [x] m7-ml: observations, rewards, replay, headless rollout, witness baseline, bounded RL Toolbox demo.
 - [ ] m8-stress-docs: stress script, measured performance, hash fixtures, README and docs.
 
 ## Decisions
