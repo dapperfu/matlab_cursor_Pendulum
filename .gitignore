@@ -1,0 +1,5 @@
+*.asv
+.pendulum_seed_counter
+*.mlx
+slprj/
+docs/figures/*.png
