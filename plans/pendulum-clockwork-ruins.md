@@ -4,7 +4,7 @@ Product contract: [PLAN.md](../PLAN.md). This file is the Cursor execution plan.
 
 ## TODOs
 
-- [ ] save-plans: Write this plan and root PLAN.md.
+- [x] save-plans: Write this plan and root PLAN.md.
 - [ ] m0-skeleton: startup, defaultConfig, validateConfig, pure SHA-256, TestSha256, MATLAB MCP.
 - [ ] m1-simulator: reset, step, free flight, edges, terminals, identical action replay.
 - [ ] m2-rope: anchor selection, attach impulse, RK4 pendulum, detach velocity.
