@@ -24,7 +24,8 @@ function runGame(options)
     fig = handles.figure;
     fig.WindowKeyPressFcn = @(~, event) keyDown(event);
     fig.WindowKeyReleaseFcn = @(~, event) keyUp(event);
-    fig.WindowFocusLostFcn = @(~, ~) focusLost();
+    % uifigure has no WindowFocusLostFcn. FigureDeactivated is its focus-loss event.
+    addlistener(fig, 'FigureDeactivated', @(~, ~) focusLost());
     fig.CloseRequestFcn = @(src, ~) closeFigure(src);
     fig.UserData = struct('stop', false);
     ticksPerFrame = max(1, round((1 / 60) / config.dt * config.presentationSpeed));
@@ -53,6 +54,9 @@ function runGame(options)
     end
 
     function focusLost()
+        if frames < 1 || ~isvalid(fig)
+            return
+        end
         session.keys.spaceHeld = false;
         session.paused = true;
         session.needRelease = true;
