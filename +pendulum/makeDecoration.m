@@ -1,0 +1,6 @@
+function body = makeDecoration(id, kind, position, size, depth)
+%MAKEDECORATION Non-colliding scenery. depth 0 is the farthest layer.
+    body = struct('id', double(id), 'kind', string(kind), ...
+        'position', reshape(double(position), 1, 2), ...
+        'size', reshape(double(size), 1, 2), 'depth', double(depth));
+end
