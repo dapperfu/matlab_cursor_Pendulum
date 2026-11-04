@@ -9,7 +9,7 @@ Product contract: [PLAN.md](../PLAN.md). This file is the Cursor execution plan.
 - [x] m1-simulator: reset, step, free flight, edges, terminals, identical action replay.
 - [x] m2-rope: anchor selection, attach impulse, RK4 pendulum, detach velocity.
 - [x] m3-collisions: swept collisions, hard-stop solids, lethal hazards, grounded auto-run, goal priority, hand-built witness.
-- [ ] m4-generator: seeded streams, witness-first generation, fallbacks, canonical hash, seed 1 levels 1-5.
+- [x] m4-generator: seeded streams, witness-first generation, fallbacks, canonical hash, seed 1 levels 1-5.
 - [ ] m5-uifigure: Space-only uifigure client, cached art, optional tones, render-independent physics.
 - [ ] m6-stages: Stage II-III templates and tick-phased moving bodies through level 20 plus fallbacks.
 - [ ] m7-ml: observations, rewards, replay, headless rollout, witness baseline, bounded RL Toolbox demo.
